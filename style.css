@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    margin: 0;
+}
+.signup-login-box {
+    border: 1px solid #000000;
+}
+.modal-header {
+    background: #000000;
+    color: #ffffff;
+    padding: 15px;
+}
+div {
+    width: 360px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+label i {
+    margin-right: 6px;
+    color: #185cc9;
+}
+small a {
+    color: #185cc9;
+    text-decoration: none;
+}
+.signin {
+  display: block;
+  margin: 0 auto;
+}

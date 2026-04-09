@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Quản Lý Tài Khoản</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    .profile-box {
+      background: rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .order-status-box {
+      border-radius: 10px;
+      padding: 20px;
+      background: #ffffff;
+    }
+    .status-item i {
+      font-size: 28px;
+      color: #0d6efd;
+    }
+    .CSKH {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #0d6efd;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+    .CSKH:hover {
+      background: #0949c6;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <div class="container py-4">
+    <h2 class="mb-4 text-center">Trang Cá Nhân</h2>
+    <div class="row g-4">
+
+      <!-- THÔNG TIN CÁ NHÂN -->
+      <div class="col-md-4">
+        <div class="profile-box">
+          <div class="d-flex align-items-center">
+            <img src="Images/avatar.jpg" class="rounded-circle me-3" width="80" height="80">
+            <div>
+              <h5 class="mb-1">Huỳnh Quốc Kiệt</h5>
+              <small>Email: kietdc22v7n514@vlvh.ctu.edu.com</small><br>
+              <small>Số dư ví: <b class="text-success">50.000.000đ</b></small>
+            </div>
+          </div>
+
+          <hr>
+
+          <button class="btn btn-success w-100 mb-2">
+            <i class="fa-solid fa-wallet me-2"></i>Nạp Tiền Vào
+          </button>
+
+          <button class="btn btn-primary w-100">
+            <i class="fa-solid fa-pen-to-square me-2"></i>Chỉnh sửa thông tin cá nhân
+          </button>
+        </div>
+      </div>
+
+      <!-- TRẠNG THÁI ĐƠN HÀNG HIỆN TẠI -->
+      <div class="col-md-8">
+        <div>
+          <h5 class="mb-3">Trạng thái đơn hàng</h5>
+
+          <div class="row text-center">
+
+            <div class="col-3 status-item">
+              <i class="fa-solid fa-clock"></i>
+              <p>Chờ xác nhận</p>
+            </div>
+
+            <div class="col-3 status-item">
+              <i class="fa-solid fa-box"></i>
+              <p>Đang đóng gói</p>
+            </div>
+
+            <div class="col-3 status-item">
+              <i class="fa-solid fa-truck"></i>
+              <p>Đang giao</p>
+            </div>
+
+            <div class="col-3 status-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Đã giao</p>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h6>Lịch sử đơn hàng của bạn</h6>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Đơn #1</span>
+              <span class="text-success">Đơn đã giao</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Đơn #2</span>
+              <span class="text-warning">Đơn đang giao</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Đơn #3</span>
+              <span class="text-danger">Đang chờ xác nhận</span>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Nút hỗ trợ khách hàng -->
+  <div class="CSKH">
+    <i class="fa-solid fa-headset"></i>
+  </div>
+</body>
+</html>

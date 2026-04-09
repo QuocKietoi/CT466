@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Chi tiết sản phẩm</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  .product-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+</style>
+</head>
+
+<body class="bg-light">
+
+<div class="container py-5">
+  <div class="row">
+
+    <!-- ẢNH -->
+    <div class="col-md-6">
+      <img id="img" class="product-img">
+    </div>
+
+    <!-- THÔNG TIN -->
+    <div class="col-md-6">
+      <h3 id="name"></h3>
+
+      <h4 class="text-danger" id="price"></h4>
+
+      <p>
+        Áo thun nam mùa hè 2025, chất liệu cotton thoáng mát,
+        phù hợp đi chơi, đi học, hoạt động ngoài trời.
+      </p>
+
+      <ul>
+        <li>Chất liệu: Cotton 100%</li>
+        <li>Kiểu dáng: Form rộng</li>
+        <li>Co giãn: Tốt</li>
+      </ul>
+
+      <!-- SIZE -->
+      <label>Chọn size:</label>
+      <select id="size" class="form-select w-50 mb-3">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+
+      <!-- BUTTON -->
+      <button id="add" class="btn btn-success">
+        Thêm vào giỏ hàng
+      </button>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
